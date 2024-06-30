@@ -1,0 +1,76 @@
+.navbar {
+    transition: all 0.5s;
+}
+
+.navbar-scrolled {
+    /* background-color: #ac5858; */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    /* padding-top: 60px; */
+    /* height: 5000px; */
+    background-color: rgb(77, 77, 77);
+    font-family: 'Noto Sans';
+}
+
+.service-card {
+    height: 200px;
+    background: linear-gradient(rgba(42, 127, 188, 1), rgba(39, 160, 224, 0.8)), url(img/cube-sea-3429485_1280.jpg);
+    min-height: 450px;
+    max-width: 350px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.400)), url(img/space-8571725_1920.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#services {
+    background: linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.400)), url(img/nebula-8824080_1920.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-img-top {
+    transform: translateZ(30px);
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-body {
+    transform: translateZ(30px);
+}
+
+.card-img-parent {
+    transform: translateZ(30px);
+    height: 150px;
+}
+
+.img-logo-central {
+    max-width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-logo-central {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        /*background-color: #ffffff; /* Replace with your desired solid color */
+        background-color: rgba(33, 37, 41, 1);
+    }
+
+    .service-card {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+  
